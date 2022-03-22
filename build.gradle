@@ -8,6 +8,7 @@ plugins {
     id 'java'
     id 'maven-publish'
     id 'application'
+    id 'image-download'
 }
 
 repositories {
@@ -31,4 +32,5 @@ publishing {
 }
 targetCompatibility = JavaVersion.VERSION_1_9
 mainClassName = 'ru.clevertec.test.receipt.Main'
-
+classes.dependsOn downloadimage
+downloadimage.dependsOn processResources
