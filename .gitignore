@@ -2,5 +2,16 @@
 *.class
 target/
 *.iml
+.gradle
+*.xml
+*.zip
+gradlew
+gradlew.bat
 
 
+
+# Ignore Gradle project-specific cache directory
+.gradle
+
+# Ignore Gradle build output directory
+build
