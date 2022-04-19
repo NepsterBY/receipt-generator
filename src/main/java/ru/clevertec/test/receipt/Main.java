@@ -34,7 +34,7 @@ public class Main {
         writer.writeLines(validCards, "\\Программирование\\Java\\receipt-generator\\validCards.txt");
         writer.writeLines(invalidCards, "\\Программирование\\Java\\receipt-generator\\invalidCards.txt");
 
-        String productsRegex = "^([0-9]+)\\s+(([А-ЯЁ][а-яё]{2,29})|([A-Z][a-z]{2,29}))\\s+(([1-9][0-9]?|100)\\.[0-9]{2})\\s+([a-z]{4,5})$";
+        String productsRegex = "^([1-9]\\d?|100)\\s+(([А-ЯЁ][а-яё]{2,29})|([A-Z][a-z]{2,29}))\\s+(([1-9][0-9]?|100)\\.[0-9]{2})\\s+([a-z]{4,5})$";
         List<String> products = reader.read("src/main/resources/products.txt");
         List<String> validProducts = new ArrayList<>();
         List<String> invalidProducts = new ArrayList<>();
