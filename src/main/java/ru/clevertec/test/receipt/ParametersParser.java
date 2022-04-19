@@ -11,10 +11,10 @@ public class ParametersParser {
         this.parameters = parameters;
     }
 
-    public Integer getCardNumber() {
+    public String getCardNumber() {
         for (String param : parameters) {
             if (param.startsWith("card-")) {
-                return Integer.parseInt(param.substring(5));
+                return param.substring(5);
             }
         }
 
